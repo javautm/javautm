@@ -1,0 +1,70 @@
+# Gradle
+.gradle
+**/build/
+!**/src/**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache
+.project
+.classpath
+
+# Kotlin
+.kotlin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/
+nbactions.xml
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Generated documentation
+dokka/
+
+# Test reports
+surefire-reports/
+failsafe-reports/
+
+# Java
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Coverage
+coverage/
+jacoco.exec
+
+# Crash logs
+hs_err_pid*
+replay_pid*

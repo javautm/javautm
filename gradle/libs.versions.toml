@@ -1,0 +1,29 @@
+[versions]
+junit = "6.1.0"
+mockk = "1.14.11"
+jakarta = "6.1.0"
+spring-framework = "7.0.7"
+spring-boot = "4.0.6"
+
+[libraries]
+# BOMs
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+spring-framework-bom = { module = "org.springframework:spring-framework-bom", version.ref = "spring-framework" }
+
+# JUnit
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+
+# Mockk
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+# Jakarta
+jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api", version.ref = "jakarta" }
+
+# Spring framework
+spring-webmvc = { module = "org.springframework:spring-webmvc" }
+
+# Spring Boot
+spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure" }
+spring-boot-starter-webmvc-test = { module = "org.springframework.boot:spring-boot-starter-webmvc-test" }
