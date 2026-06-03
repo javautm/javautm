@@ -1,13 +1,9 @@
 # Gradle
-.gradle
+.gradle/
 **/build/
 !**/src/**/build/
 gradle-app.setting
-!gradle-wrapper.jar
-!gradle-wrapper.properties
 .gradletasknamecache
-.project
-.classpath
 
 # Kotlin
 .kotlin/
@@ -48,11 +44,11 @@ dokka/
 surefire-reports/
 failsafe-reports/
 
-# Java
+# Java compiled classes
 *.class
 
 # Package files
-*.jar
+**/build/libs/
 *.war
 *.ear
 
