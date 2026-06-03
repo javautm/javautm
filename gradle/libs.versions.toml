@@ -1,6 +1,7 @@
 [versions]
 junit = "6.1.0"
 mockk = "1.14.11"
+dokka = "2.2.0"
 jakarta = "6.1.0"
 spring-framework = "7.0.7"
 spring-boot = "4.0.6"
@@ -16,6 +17,9 @@ junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
 
 # Mockk
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+# Dokka
+dokka-gradle-plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
 
 # Jakarta
 jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api", version.ref = "jakarta" }

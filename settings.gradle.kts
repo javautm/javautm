@@ -11,6 +11,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "javautm-parent"
 
+include(":docs")
 include(":javautm-core")
 include(":spring-boot-starter-javautm")
 project(":javautm-core").projectDir = file("core")

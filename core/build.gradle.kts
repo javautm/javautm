@@ -1,5 +1,6 @@
 plugins {
     id("javautm-conventions")
+    id("dokka-conventions")
 }
 
 dependencies {
