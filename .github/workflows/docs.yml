@@ -22,6 +22,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+          cache: gradle
 
       - name: Build Dokka
         run: ./gradlew :docs:dokkaGeneratePublicationHtml
