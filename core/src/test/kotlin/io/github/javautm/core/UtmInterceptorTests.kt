@@ -80,4 +80,9 @@ class UtmInterceptorTests {
         }
     }
 
+    @Test
+    fun shouldFail() {
+        assertEquals(1, 2)
+    }
+
 }
