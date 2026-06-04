@@ -1,0 +1,61 @@
+name: Publish Docs
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Build Dokka
+        run: ./gradlew :docs:dokkaGeneratePublicationHtml
+
+      - name: Prepare versioned docs
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}
+
+          mkdir -p site
+
+          cp -r docs/build/dokka/html site/latest
+
+          mkdir -p site/$VERSION
+          cp -r docs/build/dokka/html/* site/$VERSION/
+
+          echo '<meta http-equiv="refresh" content="0; url=latest/" />' > site/index.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Output URL
+        run: echo "Deployed to ${{ steps.deployment.outputs.page_url }}"

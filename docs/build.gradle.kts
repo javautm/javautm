@@ -10,4 +10,8 @@ dependencies {
 
 dokka {
     moduleName.set("Java UTM")
+
+    dokkaPublications.html {
+        includes.from("../README.md")
+    }
 }
