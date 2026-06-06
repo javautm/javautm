@@ -5,6 +5,7 @@ dokka = "2.2.0"
 jakarta = "6.1.0"
 spring-framework = "7.0.7"
 spring-boot = "4.0.6"
+vanniktech-maven-publish = "0.36.0"
 
 [libraries]
 # BOMs
@@ -20,6 +21,9 @@ mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 
 # Dokka
 dokka-gradle-plugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
+
+# Maven Publish
+vanniktech-maven-publish = { module = "com.vanniktech:gradle-maven-publish-plugin", version.ref = "vanniktech-maven-publish" }
 
 # Jakarta
 jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api", version.ref = "jakarta" }
