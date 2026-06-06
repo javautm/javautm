@@ -105,9 +105,9 @@ Core library containing:
 
 ## Compatibility
 
-| Version | Java |
-|---------|------|
-| 1.x     | 17+  |
+| Version | Java | Spring |
+|---------|------|--------|
+| 1.x     | 17+  | 4.0+   |
 
 ## Documentation
 
