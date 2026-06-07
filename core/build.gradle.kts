@@ -5,8 +5,6 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.spring.boot.dependencies)
-
     api(libs.spring.webmvc)
     compileOnly(libs.jakarta.servlet.api)
 

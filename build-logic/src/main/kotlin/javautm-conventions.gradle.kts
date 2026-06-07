@@ -6,11 +6,6 @@ plugins {
 }
 
 dependencies {
-    // BOMs
-    implementation(platform(libs.junit.bom))
-    implementation(platform(libs.spring.boot.dependencies))
-    implementation(platform(libs.spring.framework.bom))
-
     // Kotlin
     implementation(kotlin("stdlib"))
 

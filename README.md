@@ -24,7 +24,7 @@ It helps ensure consistent campaign tagging across applications and integrations
 <dependency>
     <groupId>io.github.javautm</groupId>
     <artifactId>javautm-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 
         <!-- Or optional Spring Boot starter -->
@@ -32,18 +32,18 @@ It helps ensure consistent campaign tagging across applications and integrations
 <dependency>
 <groupId>io.github.javautm</groupId>
 <artifactId>spring-boot-starter-javautm</artifactId>
-<version>1.0.0</version>
+<version>1.0.1</version>
 </dependency>
 ```
 
 ### Gradle
 
 ```kotlin
-implementation("io.github.javautm:javautm-core:1.0.0")
+implementation("io.github.javautm:javautm-core:1.0.1")
 
 // Or optional Spring Boot starter
 
-implementation("io.github.javautm:spring-boot-starter-javautm:1.0.0")
+implementation("io.github.javautm:spring-boot-starter-javautm:1.0.1")
 ```
 
 ## Quick Start with Spring Boot
@@ -52,7 +52,7 @@ implementation("io.github.javautm:spring-boot-starter-javautm:1.0.0")
 
 ```kotlin
 dependencies {
-    implementation("io.github.javautm:spring-boot-starter-javautm:1.0.0")
+    implementation("io.github.javautm:spring-boot-starter-javautm:1.0.1")
 }
 ```
 

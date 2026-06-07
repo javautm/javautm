@@ -8,13 +8,8 @@ spring-boot = "4.0.6"
 vanniktech-maven-publish = "0.36.0"
 
 [libraries]
-# BOMs
-junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
-spring-boot-dependencies = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
-spring-framework-bom = { module = "org.springframework:spring-framework-bom", version.ref = "spring-framework" }
-
 # JUnit
-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
 
 # Mockk
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
@@ -29,9 +24,9 @@ vanniktech-maven-publish = { module = "com.vanniktech:gradle-maven-publish-plugi
 jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api", version.ref = "jakarta" }
 
 # Spring framework
-spring-webmvc = { module = "org.springframework:spring-webmvc" }
+spring-webmvc = { module = "org.springframework:spring-webmvc", version.ref = "spring-framework" }
 
 # Spring Boot
-spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
-spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure" }
-spring-boot-starter-webmvc-test = { module = "org.springframework.boot:spring-boot-starter-webmvc-test" }
+spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc", version.ref = "spring-boot" }
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure", version.ref = "spring-boot" }
+spring-boot-starter-webmvc-test = { module = "org.springframework.boot:spring-boot-starter-webmvc-test", version.ref = "spring-boot" }
